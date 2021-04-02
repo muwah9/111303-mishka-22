@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body class="page__body">
   <header class="page-header">
@@ -59,7 +60,7 @@
     <section class="goods-types">
       <h1 class="goods-types__title">Милые штуки ручной работы для дома</h1>
       <ul class="goods-types__list wrapper">
-        <li class="goods-types__item">
+        <li class="goods-types__item goods-types__item--interior">
           <a href="#" class="goods-types__link">Предметы интерьера
             <svg width="40" height="62" viewBox="0 0 40 62" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.5">
@@ -82,7 +83,7 @@
             </svg>
           </a>
         </li>
-        <li class="goods-types__item">
+        <li class="goods-types__item goods-types__item--toys">
           <a href="#" class="goods-types__link">Детские игрушки
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.5" d="M0 43.9933L27.4 60V36.5436L0 20.4362V43.9933ZM51.3 12.4832V15C51.3 16.8121 47.8 18.3221 43.6 18.3221C39.3 18.3221 35.9 16.8121 35.9 15V10.8725C36.2 12.5839 39.5 13.9933 43.6 13.9933C47.9 13.9933 51.3 12.4832 51.3 10.6711C51.3 8.85907 47.8 7.349 43.6 7.349C43.3 7.349 42.9 7.349 42.6 7.349L37.6 4.42954V7.55034C37.6 9.36242 34.1 10.8725 29.9 10.8725C27.2 10.8725 24.9 10.2685 23.5 9.36242C23.3 9.16108 23.1 8.95973 22.8 8.75839C22.4 8.3557 22.2 7.95302 22.2 7.55034V4.5302L17.4 7.349C17.1 7.349 16.7 7.349 16.3 7.349C12 7.349 8.60001 8.85907 8.60001 10.6711C8.60001 12.4832 12.1 13.9933 16.3 13.9933C20.4 13.9933 23.7 12.5839 24 10.8725V15C24 16.8121 20.5 18.3221 16.3 18.3221C12 18.3221 8.60001 16.8121 8.60001 15V12.5839L2.60001 16.1074L30.1 32.2148L57.5 16.2081L51.3 12.4832ZM37.7 22.7517C37.7 24.5638 34.2 26.0738 30 26.0738C25.7 26.0738 22.3 24.5638 22.3 22.7517V18.6242C22.6 20.3356 25.9 21.745 30 21.745C34.1 21.745 37.4 20.3356 37.7 18.6242V22.7517ZM32.6 36.745V60L60 43.9933V20.7383L32.6 36.745ZM29.9 6.6443C34.2 6.6443 37.6 5.13423 37.6 3.32215C37.6 1.51007 34.1 0 29.9 0C25.6 0 22.2 1.51007 22.2 3.32215C22.2 5.13423 25.6 6.6443 29.9 6.6443Z" fill="#149080"/>
@@ -105,6 +106,7 @@
           <dt class="product-card__termin">Высота:</dt>
             <dd class="product-card__derscription">15 см</dd>
         </dl>
+        <img src="./img/item-basket-mobile.jpg" alt="Вязаная корзинка Тиффани" class="product-card__image">
         <p class="product-card__price">Цена: 990 руб.</p>
         <a class="button button--product" href="#" aria-label="кнопка заказать">Заказать</a>
       </div>
@@ -145,7 +147,7 @@
             </blockquote>
             <p class="reviews__author">
               Анастасия Красильникова
-              @misssssiskras
+            <p class="reviews__social-name"> @misssssiskras</p>
             </p>
           </li>
           <li class="reviews__item slider__item">
@@ -156,7 +158,7 @@
             </blockquote>
             <p class="reviews__author">
               Екатерина Красильникова
-              @misssssiskras2
+            <p class="reviews__social-name">@misssssiskras2</p>
             </p>
           </li>
           <li class="reviews__item slider__item">
@@ -167,7 +169,7 @@
             </blockquote>
             <p class="reviews__author">
               Елена Красильниковa
-              @misssssiskras3
+            <p class="reviews__social-name">@misssssiskras3</p>
             </p>
           </li>
         </ul>
@@ -234,7 +236,7 @@
     </div>
     <div class="create-by">
       <a class="create-by__link" href="https://htmlacademy.ru/intensive/adaptive"aria-label="интенсив html academy">
-        <span class="create-by__text">Разработано</span>
+        Разработано
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.6506 0H13.5502L0 1.39589V26.0235L13.5502 34L27 26.0235V1.39589L13.6506 0ZM25.0929 12.0645L13.5502 5.28446V5.18475H13.4498L13.3494 5.08504V5.18475L1.90706 12.0645V3.09091L13.4498 1.89443L25.0929 3.09091V12.0645ZM13.4498 6.78006L24.9926 13.4604L20.4758 16.0528L13.3494 11.8651V13.261L19.2714 16.7507L18.368 17.2493L13.3494 14.2581V15.654L17.1636 17.9472L16.3606 18.4457L13.3494 16.651V18.0469L15.2565 19.1437L13.4498 20.2405L2.00744 13.5601L13.4498 6.78006ZM1.90706 15.0557L13.3494 21.8358V22.8328L5.42007 18.1466V19.5425L13.4498 24.3284V25.4252L5.42007 20.739V22.1349L13.4498 26.9208L21.5799 22.0352V16.8504L24.9926 14.8563V24.827L13.4498 31.7067L1.90706 24.9267V15.0557Z"
