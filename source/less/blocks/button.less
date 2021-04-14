@@ -5,10 +5,9 @@
   padding: 14px 10px;
   width: 100%;
   max-width: 320px;
-  margin: 0 auto;
   border: 2px solid @basic-text;
   font: inherit;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: @basic-text;
@@ -17,4 +16,36 @@
   text-decoration: none;
   background-color: @white;
   cursor: pointer;
+
+  &--contacts {
+    margin-top: 41px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 175px;
+    }
+  }
+
+  &--reviews {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 80px;
+      right: 52px;
+      width: 174px;
+    }
+  }
+
+  &--form {
+    font-size: 17px;
+    line-height: 16px;
+    color: @white;
+    background: @light-green;
+    border: none;
+    padding: 19px 10px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    max-width: none;
+  }
 }

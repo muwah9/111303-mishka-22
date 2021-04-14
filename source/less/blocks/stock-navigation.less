@@ -1,0 +1,23 @@
+.stock-navigation {
+  display: none;
+
+  @media (min-width: @tablet-width) and (min-width: @desktop-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70%;
+    order: 3;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 50px;
+  }
+}
+
+.stock-navigation__link {
+  padding: 28px 14px 26px 0;
+
+  @media (min-width: @desktop-width) {
+    padding: 28px 14px 26px 0;
+  }
+}

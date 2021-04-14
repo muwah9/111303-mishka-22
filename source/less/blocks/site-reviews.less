@@ -1,0 +1,40 @@
+.site-reviews {
+  position: relative;
+  padding-bottom: 73px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    height: 6px;
+    background: url("../img/zigzag-line-mobile-fill.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 34px;
+      width: 100%;
+      height: 17px;
+      background: url("../img/zigzag-line.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 100%;
+      height: 23px;
+      background: url("../img/zigzag-line-dekstop.svg");
+    }
+  }
+}
