@@ -1,0 +1,29 @@
+.interactive-map {
+  position: relative;
+  margin: 0 -50px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 527px;
+    height: 457px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+.interactive-map__map {
+  width: 100%;
+}
+
+.interactive-map__marker {
+  position: absolute;
+  left: 44%;
+  top: 37%;
+
+  @media (min-width: @tablet-width) {
+    left: 48%;
+    top: 34%;
+  }
+}

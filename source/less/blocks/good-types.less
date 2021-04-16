@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  width: 100%;
   padding: 0;
   background: url("../img/background-home-mobile.png") no-repeat 50% -26%;
   background-size: 320px 373px;
@@ -31,7 +32,7 @@
       content: "";
       position: absolute;
       z-index: 2;
-      bottom: 0;
+      bottom: -1px;
       left: 0;
       width: 100%;
       height: 17px;
@@ -65,7 +66,6 @@
     padding-top: 101px;
     font-size: 53px;
     line-height: 57px;
-    min-width: 1150px;
   }
 }
 
@@ -84,7 +84,7 @@
 
 .goods-types__item {
   list-style-type: none;
-  padding: 23px 160px 28px 30px;
+  padding: 25px 35px 35px;
 }
 
 .goods-types__link {
@@ -105,11 +105,11 @@
   background: @light-green;
 
   @media (min-width: @tablet-width) {
-    padding: 27px 184px 37px 36px;
+    width: 40%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 29%;
+    width: 43%;
   }
 
   &::before {
@@ -129,11 +129,11 @@
 
 
   @media (min-width: @tablet-width) {
-    padding: 27px 205px 37px 36px;
+    width: 39%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 27%;
+    width: 43%;
   }
 
   &::before {

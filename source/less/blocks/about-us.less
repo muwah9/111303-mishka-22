@@ -1,8 +1,14 @@
 .about-us {
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
-    padding-left: 175px;
+    padding-left: 225px;
   }
 }
 
@@ -47,7 +53,6 @@
   color: @black;
   list-style-type: none;
   white-space: pre-line;
-  word-break: break-word;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

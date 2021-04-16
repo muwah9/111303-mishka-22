@@ -4,6 +4,10 @@
   background: @white;
 
   @media (min-width: @tablet-width) {
-    background: @background-grey;
+    background: linear-gradient(@white 50% 58%, @background-grey 50%);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(@white 50% 61%, @background-grey 50%);
   }
 }

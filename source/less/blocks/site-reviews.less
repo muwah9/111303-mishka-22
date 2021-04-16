@@ -10,29 +10,15 @@
     width: 100%;
     height: 6px;
     background: url("../img/zigzag-line-mobile-fill.svg");
-  }
 
-  @media (min-width: @tablet-width) {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
+    @media (min-width: @tablet-width) {
       bottom: 34px;
-      width: 100%;
       height: 17px;
       background: url("../img/zigzag-line.svg");
     }
-  }
 
-  @media (min-width: @desktop-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
+    @media (min-width: @desktop-width) {
       bottom: 20px;
-      width: 100%;
       height: 23px;
       background: url("../img/zigzag-line-dekstop.svg");
     }

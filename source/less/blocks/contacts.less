@@ -1,6 +1,11 @@
 .contacts {
   @media (min-width: @desktop-width) {
-    padding-left: 175px;
+    display: grid;
+    grid-template-columns: 300px 547px;
+    grid-template-rows: 100px 50% min-content;
+    justify-items: flex-start;
+    justify-content: space-between;
+    padding-left: 225px;
   }
 }
 
@@ -32,6 +37,7 @@
 }
 
 .contacts__list {
+  box-sizing: border-box;
   display: grid;
   row-gap: 30px;
   font-weight: 400;
@@ -48,7 +54,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 20% 80%;
   }
 }
 
@@ -57,9 +63,8 @@
   grid-column-end: 3;
 
   @media (min-width: @tablet-width) {
-    width: 38%;
+    flex-basis: 38%;
     margin-left: 28px;
-    word-break: break-word;
   }
 
   @media (min-width: @desktop-width) {
