@@ -1,4 +1,30 @@
 .socials {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
   list-style-type: none;
+  border-bottom: 1px solid @border-footer;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-bottom: 4px;
+    border: none;
+    align-items: baseline;
+  }
+}
+
+.socials__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &:nth-child(2) {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
