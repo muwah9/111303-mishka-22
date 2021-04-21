@@ -17,6 +17,15 @@
 .stock-navigation__link {
   padding: 28px 14px 26px 0;
 
+  &:hover,
+  &:focus {
+    color: fade(@black, 60%);
+  }
+
+  &:active {
+    color: fade(@black, 30%);
+  }
+
   @media (min-width: @desktop-width) {
     padding: 28px 14px 26px 0;
   }
