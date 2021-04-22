@@ -43,8 +43,9 @@
 
 .user-navigation__search {
   position: absolute;
-  top: 30px;
-  left: -50px;
+  top: 31px;
+  left: -44px;
+
 
   @media (min-width: @tablet-width) {
     top: -7px;
@@ -54,8 +55,9 @@
 
 .user-navigation__basket {
   position: absolute;
-  top: 32px;
-  left: -36px;
+  top: 30px;
+  left: -31px;
+
 
   @media (min-width: @tablet-width) {
     top: 28px;
@@ -70,12 +72,32 @@
   &--basket {
     padding: 28px 0 26px 16px;
 
+    &:hover,
+    &:focus {
+      color: fade(@black, 60%);
+      stroke: @secondary-green;
+    }
+
+    &:active {
+      color: fade(@black, 30%);
+      stroke: fade(@secondary-green, 30%);
+    }
+
     @media (min-width: @tablet-width) {
       padding: 28px 0 21px 0;
     }
   }
 
   &--search {
+    &:hover,
+    &:focus {
+      stroke: @secondary-green;
+    }
+
+    &:active {
+      stroke: fade(@secondary-green, 30%);
+    }
+
     @media (min-width: @tablet-width) {
       padding: 0;
     }

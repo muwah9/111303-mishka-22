@@ -29,8 +29,17 @@
 .main-navigation__logo {
   display: flex;
   justify-content: center;
-  padding: 21px 0 22px 0;
+  padding: 21px 0 17px 0;
   border-bottom: 1px solid @border-grey;
+
+  &:hover:not(.current-logo),
+  &:focus:not(.current-logo) {
+    opacity: 0.6;
+  }
+
+  &:active:not(.current-logo) {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     background: white;
@@ -42,7 +51,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    padding-top: 16px;
+    padding-top: 8px;
     text-align: center;
     order: 1;
     width: 15%;

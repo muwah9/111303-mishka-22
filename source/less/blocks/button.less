@@ -52,4 +52,22 @@
     width: 290px;
     max-width: none;
   }
+
+  &--catalog-form {
+    @media (min-width: @tablet-width) {
+      width: 230px;
+    }
+  }
+
+  &--product {
+    &:hover,
+    &:focus {
+      color: @white;
+      background: @gradient-black-light;
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+  }
 }

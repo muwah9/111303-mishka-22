@@ -17,7 +17,6 @@
     order: 0;
     background: white;
     flex-basis: 39%;
-    border-bottom: none;
   }
 }
 
@@ -48,6 +47,15 @@
 
 .site-navigation__link {
   padding: 28px 14px 26px 0;
+
+  &:hover,
+  &:focus {
+    color: fade(@black, 60%);
+  }
+
+  &:active {
+    color: fade(@black, 30%);
+  }
 
   @media (min-width: @tablet-width) {
     padding: 22px 17px 26px 0;
