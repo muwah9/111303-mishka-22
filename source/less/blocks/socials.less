@@ -28,3 +28,14 @@
     padding: 0;
   }
 }
+
+.socials__link {
+  &:hover path,
+  &:focus path {
+    fill: @secondary-green;
+  }
+
+  &:active path {
+    fill: fade(@secondary-green, 30%);
+  }
+}

@@ -54,6 +54,16 @@
   }
 
   &--catalog-form {
+    &:hover,
+    &:focus {
+      color: @white;
+      background: @gradient-black-light;
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+
     @media (min-width: @tablet-width) {
       width: 230px;
     }
@@ -68,6 +78,37 @@
 
     &:active {
       color: fade(@white, 30%);
+    }
+  }
+
+  &--video {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    &:hover,
+    &:focus {
+      color: @white;
+      background: @gradient-black-light;
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 41px;
+      width: 584px;
+      margin-top: 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+      width: 230px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
     }
   }
 }

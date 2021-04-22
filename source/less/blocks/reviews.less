@@ -139,13 +139,40 @@
   }
 
   &--previous {
+    &:hover,
+    &:focus {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+
     &::before {
       background: url("../img/arrow-left.svg");
+
+      &:hover,
+      &:focus {
+        opacity: 60%;
+      }
+
+      &:active {
+        opacity: 30%;
+      }
     }
   }
 
   &--next {
     border-width: 1px 1px 1px 0;
+
+    &:hover,
+    &:focus {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
 
     &::before {
       background: url("../img/arrow-right.svg");

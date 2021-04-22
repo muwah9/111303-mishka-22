@@ -11,6 +11,15 @@
   line-height: 18px;
   color: @black;
   text-decoration: none;
+
+  &:hover path,
+  &:focus path {
+    fill: @logo-fill-green;
+  }
+
+  &:active path {
+    fill: fade(@logo-fill-green, 30%);
+  }
 }
 
 .create-by__image {
