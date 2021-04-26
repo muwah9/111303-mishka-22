@@ -2,6 +2,11 @@
   position: relative;
   padding-bottom: 73px;
 
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    min-height: 553px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -12,15 +17,17 @@
     background: url("../img/zigzag-line-mobile-fill.svg");
 
     @media (min-width: @tablet-width) {
-      bottom: 34px;
+      bottom: 27px;
       height: 17px;
       background: url("../img/zigzag-line.svg");
     }
 
     @media (min-width: @desktop-width) {
-      bottom: 20px;
+      bottom: 0;
+      left: 50px;
+      width: 92%;
       height: 23px;
-      background: url("../img/zigzag-line-dekstop.svg");
+      background: url("../img/zigzag-line-desktop.svg");
     }
   }
 }

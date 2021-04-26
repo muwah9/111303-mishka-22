@@ -14,16 +14,21 @@
 }
 
 .interactive-map__map {
+  height: 454px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 457px;
+  }
 }
 
 .interactive-map__marker {
   position: absolute;
   left: 44%;
-  top: 37%;
+  top: 31%;
 
   @media (min-width: @tablet-width) {
-    left: 48%;
-    top: 34%;
+    left: 47%;
+    top: 30%;
   }
 }

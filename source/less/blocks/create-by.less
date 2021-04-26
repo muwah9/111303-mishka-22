@@ -1,16 +1,31 @@
 .create-by {
+  height: 50px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+    width: 184px;
+  }
 }
 
 .create-by__link {
+  position: relative;
+  margin-top: 10px;
+  width: 174px;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
   color: @black;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    width: inherit;
+    margin-top: 2px;
+  }
 
   &:hover path,
   &:focus path {
@@ -23,11 +38,12 @@
 }
 
 .create-by__image {
-  margin-left: 40px;
+  position: absolute;
+  top: -9px;
+  right: -6px;
 
   @media (min-width: @tablet-width) {
-    display: inline-block;
-    vertical-align: text-top;
-    margin-left: 20px;
+    right: 2px;
+    top: -6px;
   }
 }

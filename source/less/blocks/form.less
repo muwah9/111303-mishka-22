@@ -64,6 +64,15 @@
   text-align: center;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    border: 2px solid fade(@basic-text, 30%);
+  }
+
+  &:active {
+    border: 2px solid @light-green;
+  }
+
   &--current {
     border: 2px solid @light-green;
   }

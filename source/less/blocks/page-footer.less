@@ -2,6 +2,14 @@
   background: @background-grey;
   margin-top: 39px;
   min-height: 143px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
+  }
 }
 
 .page-footer__wrapper {
@@ -38,5 +46,6 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    padding-bottom: 25px;
   }
 }

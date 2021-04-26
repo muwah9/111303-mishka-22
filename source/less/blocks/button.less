@@ -18,10 +18,22 @@
   cursor: pointer;
 
   &--contacts {
-    margin-top: 41px;
+    margin-top: 36px;
+
+    &:hover,
+    &:focus {
+      color: @white;
+      background: @gradient-black-light;
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
 
     @media (min-width: @tablet-width) {
-      margin-left: 175px;
+      margin-left: 217px;
+      margin-top: 50px;
+      width: 230px;
     }
 
     @media (min-width: @desktop-width) {
@@ -30,11 +42,27 @@
   }
 
   &--reviews {
+    &:hover,
+    &:focus {
+      color: @white;
+      background: @gradient-black-light;
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+
     @media (min-width: @tablet-width) {
       position: absolute;
       top: 80px;
       right: 52px;
       width: 174px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 175px;
+      right: 48px;
+      top: 85px;
     }
   }
 
@@ -46,11 +74,15 @@
     border: none;
     padding: 19px 10px;
     margin-bottom: 46px;
-  }
 
-  @media (min-width: @tablet-width) {
-    width: 290px;
-    max-width: none;
+    @media (min-width: @tablet-width) {
+      width: 290px;
+      max-width: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 350px;
+    }
   }
 
   &--catalog-form {
@@ -70,6 +102,10 @@
   }
 
   &--product {
+    @media (min-width: @desktop-width) {
+      width: 292px;
+    }
+
     &:hover,
     &:focus {
       color: @white;
@@ -82,9 +118,9 @@
   }
 
   &--video {
-    width: 200px;
+    width: 192px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
 
     &:hover,
     &:focus {
@@ -99,11 +135,12 @@
     @media (min-width: @tablet-width) {
       margin-bottom: 41px;
       width: 584px;
-      margin-top: 37px;
+      margin-top: 38px;
     }
 
     @media (min-width: @desktop-width) {
-      margin: 0;
+      margin-top: 23px;
+      margin-right: 56px;
       width: 230px;
       grid-column-start: 2;
       grid-column-end: 3;
