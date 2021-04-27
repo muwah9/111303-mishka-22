@@ -21,7 +21,6 @@
 
 .main-navigation a {
   font-weight: 700;
-  font-size: 17px;
   color: @black;
   text-decoration: none;
 }
@@ -31,6 +30,7 @@
   justify-content: center;
   padding: 21px 0 17px 0;
   border-bottom: 1px solid @border-grey;
+  transition: all 0.35s ease-in-out;
 
   &:hover:not(.current-logo),
   &:focus:not(.current-logo) {
@@ -45,13 +45,13 @@
     background: white;
     justify-content: flex-start;
     padding-left: 50px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
     flex-grow: 1;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    padding-top: 8px;
+    padding-top: 10px;
     text-align: center;
     order: 1;
     width: 15%;
@@ -87,6 +87,7 @@
     order: 2;
     flex-basis: 34%;
     justify-content: flex-end;
+    margin-left: 6px;
     margin-bottom: 22px;
     padding-right: 50px;
   }
@@ -95,5 +96,8 @@
     order: 3;
     flex-basis: 39%;
     justify-content: flex-end;
+    margin-bottom: 24px;
+    margin-left: 3px;
+    margin-top: 21px;
   }
 }

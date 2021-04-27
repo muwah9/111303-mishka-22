@@ -7,6 +7,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     order: 1;
     flex-direction: row;
     flex-basis: 52%;
@@ -22,7 +23,9 @@
 
 .site-navigation__item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  font-size: 17px;
   align-items: center;
   border-bottom: 1px solid @border-grey;
 
@@ -35,6 +38,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 17px;
+
     &:nth-child(1) {
       border-right: 1px solid @border-grey;
     }
@@ -47,21 +52,22 @@
 
 .site-navigation__link {
   padding: 28px 14px 26px 0;
+  transition: all 0.3s ease-in-out;
 
   &:hover,
   &:focus {
-    color: fade(@black, 60%);
+    color: @black-text-hover;
   }
 
   &:active {
-    color: fade(@black, 30%);
+    color: @black-text-down;
   }
 
   @media (min-width: @tablet-width) {
-    padding: 22px 17px 26px 0;
+    padding: 21px 37px 26px 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 33px 35px 26px 0;
+    padding: 31px 37px 26px 0;
   }
 }

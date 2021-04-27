@@ -2,6 +2,14 @@
   background: @background-grey;
   margin-top: 39px;
   min-height: 143px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
+  }
 }
 
 .page-footer__wrapper {
@@ -27,18 +35,17 @@
 .page-footer__logo > svg {
   display: none;
 
-  &:hover,
-  &:focus {
+  &:hover path,
+  &:focus path {
     fill: @logo-fill-green;
-    stroke: @logo-fill-green;
   }
 
-  &:active {
+  &:active path {
     fill: fade(@logo-fill-green, 30%);
-    stroke: fade(@logo-fill-green, 30%);
   }
 
   @media (min-width: @tablet-width) {
     display: flex;
+    padding-bottom: 25px;
   }
 }

@@ -11,12 +11,15 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-bottom: 79px;
     padding-left: 225px;
-    background-position: 8% 100%;
+    background-position: 6% 100%;
   }
 }
 
 .reviews__title {
+  margin-top: 38px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -25,7 +28,7 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-bottom: 38px;
-    padding-top: 85px;
+    padding-top: 83px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -33,7 +36,6 @@
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 78px;
     margin-bottom: 36px;
   }
 }
@@ -51,15 +53,22 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 93%;
+  }
 }
 
 .reviews__author {
+  margin-top: 36px;
+  margin-bottom: 3px;
   color: @black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 24px;
 
   @media (min-width: @tablet-width) {
+    font-size: 18px;
     padding-top: 62px;
     margin: 0;
   }
@@ -72,17 +81,17 @@
 }
 
 .reviews__social-name {
+  margin: 0;
   color: @basic-text;
   font-weight: 400;
   font-size: 17px;
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
     padding-top: 5px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     padding: 0;
   }
 }
@@ -95,7 +104,7 @@
 .reviews__controls {
   display: flex;
   justify-content: center;
-  margin: 25px auto 38px;
+  margin: 30px auto 38px;
   max-width: 320px;
 
   @media (min-width: @tablet-width) {
@@ -105,11 +114,12 @@
     width: 175px;
     position: absolute;
     right: 50px;
-    bottom: 31px;
+    bottom: 83px;
   }
 
   @media (min-width: @desktop-width) {
-    bottom: 2px;
+    right: 48px;
+    bottom: 94px;
   }
 }
 
@@ -139,13 +149,42 @@
   }
 
   &--previous {
+    &:hover,
+    &:focus {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+
     &::before {
       background: url("../img/arrow-left.svg");
+
+      &:hover,
+      &:focus {
+        opacity: 60%;
+      }
+
+      &:active {
+        opacity: 30%;
+        outline: none;
+      }
     }
   }
 
   &--next {
     border-width: 1px 1px 1px 0;
+
+    &:hover,
+    &:focus {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+      outline: none;
+    }
 
     &::before {
       background: url("../img/arrow-right.svg");
