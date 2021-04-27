@@ -9,6 +9,75 @@
   flex-wrap: wrap;
   width: 100%;
 
+  @media (min-width: @mobile-width) and (max-width: 767px) {
+    &--closed {
+      .main-navigation__toggle::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 24px;
+        width: 20px;
+        height: 2px;
+        background-color: @black;
+        box-shadow: 0 6px 0 0 @black, 0 14px 0 0 @black;
+      }
+
+      .main-navigation__site-list {
+        display: none;
+      }
+
+      .main-navigation__user-list {
+        display: none;
+      }
+
+      .main-navigation__logo {
+        display: flex;
+      }
+    }
+
+    &--open {
+      .main-navigation__toggle::before,
+      .main-navigation__toggle::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        width: 27px;
+        height: 2px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .main-navigation__toggle::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      .main-navigation__toggle::after {
+        transform: rotate(-45deg);
+      }
+
+      .main-navigation__user-list {
+        display: block;
+      }
+
+      .main-navigation__site-list {
+        display: block;
+      }
+    }
+
+    &--no-js {
+      .main-navigation__toggle {
+        display: none;
+      }
+
+      .main-navigation__site-list,
+      .main-navigation__user-list {
+        display: block;
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
   }
@@ -62,11 +131,15 @@
 
 .main-navigation__toggle {
   position: absolute;
-  top: 28px;
-  right: 30px;
-  background: url("../img/menu-close.svg") 100% 100%;
-  width: 21px;
-  height: 20px;
+  top: 20px;
+  right: 5px;
+  z-index: 2;
+  width: 65px;
+  height: 35px;
+  padding: 0;
+  background-color: @white;
+  cursor: pointer;
+  outline: none;
   border: none;
 
   @media (min-width: @tablet-width) {

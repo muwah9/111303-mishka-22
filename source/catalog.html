@@ -9,7 +9,7 @@
 </head>
 <body class="page__body">
 <header class="page-header">
-  <nav class="main-navigation">
+  <nav class="main-navigation main-navigation--closed main-navigation--no-js">
     <a href="index.html" class="main-navigation__logo">
       <picture>
         <source media="(min-width: 1150px)" srcset="/img/mishka-logo.svg">
@@ -70,7 +70,7 @@
       <ul class="catalog-card__list">
         <li class="catalog-card__item">
           <picture class="catalog-card__picture">
-            <source media="(min-width: 1150px)" srcset="/img/item-bunny.jpg" sizes="316px 462px">
+            <source media="(min-width: 1150px)" srcset="/img/item-bunny.jpg">
             <source media="(min-width: 768px)" srcset="/img/item-bunny-tablet.jpg">
             <img class="catalog-card__image" src="./img/item-bunny-mobile.jpg" alt="Зайчик-попрыгайчик">
           </picture>
@@ -93,7 +93,7 @@
         </li>
         <li class="catalog-card__item">
           <picture class="catalog-card__picture">
-            <source media="(min-width: 1150px)" srcset="/img/item-basket-towel.jpg" sizes="316px 462px">
+            <source media="(min-width: 1150px)" srcset="/img/item-basket-towel.jpg">
             <source media="(min-width: 768px)" srcset="/img/item-basket-towel-tablet.jpg">
             <img class="catalog-card__image" src="./img/item-basket-towel-mobile.jpg" alt="Корзинка для белья">
           </picture>
@@ -116,9 +116,9 @@
         </li>
         <li class="catalog-card__item">
           <picture class="catalog-card__picture">
-            <source media="(min-width: 1150px)" srcset="./img/item-basket-toys.jpg">
-            <source media="(min-width: 768px)" srcset="./img/item-basket-toys-tablet.jpg">
-            <img class="catalog-card__image" src="./img/item-basket-toys-mobile.jpg"alt="Корзинка для игрушек">
+            <source media="(min-width: 1150px)" srcset="/img/item-basket-toys.jpg">
+            <source media="(min-width: 768px)" srcset="/img/item-basket-toys-tablet.jpg">
+            <img class="catalog-card__image" src="./img/item-basket-toys-mobile.jpg" alt="Корзинка для игрушек">
           </picture>
           <div class="catalog-card__info">
             <div class="catalog-card__description">
@@ -255,5 +255,6 @@
     </form>
   </div>
 </footer>
+<script src="js/mobile-menu.js"></script>
 </body>
 </html>
