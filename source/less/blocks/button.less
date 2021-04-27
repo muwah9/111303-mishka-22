@@ -2,9 +2,7 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  padding: 14px 10px;
-  width: 100%;
-  max-width: 320px;
+  padding: 14px 78px;
   border: 2px solid @basic-text;
   font: inherit;
   font-size: 18px;
@@ -16,8 +14,14 @@
   text-decoration: none;
   background-color: @white;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  @media (min-width: @tablet-width) {
+    padding: 14px 35px;
+  }
 
   &--contacts {
+    padding: 14px 49px;
     margin-top: 36px;
 
     &:hover,
@@ -33,10 +37,10 @@
     @media (min-width: @tablet-width) {
       margin-left: 217px;
       margin-top: 50px;
-      width: 230px;
     }
 
     @media (min-width: @desktop-width) {
+      padding: 14px 34px;
       margin: 0;
     }
   }
@@ -56,11 +60,9 @@
       position: absolute;
       top: 80px;
       right: 52px;
-      width: 174px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 175px;
       right: 48px;
       top: 85px;
     }
@@ -72,20 +74,17 @@
     color: @white;
     background: @light-green;
     border: none;
-    padding: 19px 10px;
+    padding: 19px 82px;
     margin-bottom: 46px;
 
     @media (min-width: @tablet-width) {
-      width: 290px;
-      max-width: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 350px;
+      padding: 14px 128px;
     }
   }
 
   &--catalog-form {
+    padding: 14px 40px;
+
     &:hover,
     &:focus {
       color: @white;
@@ -97,13 +96,13 @@
     }
 
     @media (min-width: @tablet-width) {
-      width: 230px;
+      padding: 14px 35px;
     }
   }
 
   &--product {
-    @media (min-width: @desktop-width) {
-      width: 292px;
+    @media (min-width: @tablet-width) {
+      padding: 14px 98px;
     }
 
     &:hover,
@@ -118,7 +117,6 @@
   }
 
   &--video {
-    width: 192px;
     margin: 0 auto;
     margin-bottom: 32px;
 
@@ -134,14 +132,14 @@
 
     @media (min-width: @tablet-width) {
       margin-bottom: 41px;
-      width: 584px;
       margin-top: 38px;
+      padding: 14px 215px;
     }
 
     @media (min-width: @desktop-width) {
       margin-top: 23px;
-      margin-right: 56px;
-      width: 230px;
+      margin-right: 54px;
+      padding: 14px 39px;
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 3;
