@@ -136,7 +136,7 @@
         <legend class="catalog-form__legend catalog-form__legend--telephone">ТЕЛ</legend>
         <div class="catalog-form__content">
           <label for="telephone" class="catalog-form__label catalog-form__label--telephone">
-            <input id="telephone" name="telephone" type="text" class="catalog-form__input catalog-form__input--telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <input id="telephone" name="telephone" type="tel" class="catalog-form__input catalog-form__input--telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <svg class="catalog-form__telephone-image" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.2">
                 <path
@@ -156,7 +156,7 @@
         <legend class="catalog-form__legend catalog-form__legend--email">E-MAIL</legend>
         <div class="catalog-form__content">
           <label for="email" class="catalog-form__label catalog-form__label--email">
-            <input id="email" name="email" type="text" class="catalog-form__input catalog-form__input--email" placeholder="Ваш Email*">
+            <input id="email" name="email" type="email" class="catalog-form__input catalog-form__input--email" placeholder="Ваш Email*" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
             <svg class="catalog-form__email-image" width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.2"
                     d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z"
@@ -184,7 +184,7 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="#" class="page-footer__logo" aria-label="Логотип Mishka">
+    <a href="index.html" class="page-footer__logo" aria-label="Логотип Mishka">
       <svg width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M19.2694 21.3813C19.1691 18.6962 18.7681 16.1105 18.7681 13.4255C18.7681 11.2376 19.1691 9.04976 18.3671 6.96135C18.3671 6.76246 18.4673 6.46411 18.4673 6.26522C18.6678 5.27074 15.1589 5.76798 14.6576 6.76246C14.3569 7.0608 14.1564 7.35914 14.2566 7.75694C14.2566 7.85638 14.3569 7.95583 14.3569 8.05528C13.6551 11.2376 12.7528 14.3205 11.7503 17.4034C11.3492 18.5967 10.848 19.6907 10.4469 20.884C9.84542 19.7901 9.24389 18.6962 8.84287 17.5028C7.4393 14.1216 6.23625 10.6409 4.53192 7.35914C4.73243 5.86743 1.32377 5.96688 0.621988 7.35914C-0.180049 9.04976 -0.0797945 10.7404 0.220969 12.5304C0.521733 14.5194 0.621988 16.5083 0.621988 18.5967C0.621988 22.5746 1.02301 26.4531 1.02301 30.431C0.621988 30.8288 0.521733 31.326 0.922752 31.8233C1.12326 32.0222 1.32377 32.2211 1.52428 32.3205C2.52683 33.0167 5.13345 32.42 5.13345 31.0277C5.13345 26.9503 4.83268 22.873 4.73243 18.6962C4.73243 18.2984 4.73243 17.9006 4.73243 17.5028C4.83268 17.6023 4.83268 17.8012 4.93294 17.9006C5.53447 19.4918 6.23625 21.0829 7.13854 22.5746C8.04083 24.0664 8.44185 25.6575 8.94312 27.2487C8.74261 27.4476 8.64236 27.7459 8.74262 27.9448C8.74262 28.1437 8.84287 28.2432 9.04338 28.3426C9.64491 28.8399 10.848 28.641 11.5497 28.3426C11.8505 28.2432 12.1513 28.0443 12.3518 27.9448C12.6525 27.7459 13.2541 27.2487 13.0536 26.7514C13.0536 26.652 12.9533 26.5526 12.9533 26.4531C13.4546 25.1603 13.6551 23.8675 13.9559 22.5746C14.2566 21.1824 14.7579 19.7901 15.2592 18.4973C15.3594 19.094 15.3594 19.6907 15.4597 20.3868C15.6602 22.9724 15.4597 25.4586 15.4597 27.9448C15.4597 28.7404 15.5599 29.536 15.6602 30.431C15.7604 30.7294 16.0612 32.2211 15.9609 32.3205C15.1589 32.8178 15.3594 33.4144 16.1615 33.6133C17.0638 33.8122 18.2668 33.5139 18.9686 32.9172C20.1716 31.8233 19.5701 30.1327 19.3696 28.7404C18.8683 26.3537 19.3696 23.768 19.2694 21.3813Z"

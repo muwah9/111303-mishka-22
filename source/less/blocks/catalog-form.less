@@ -603,8 +603,22 @@
     }
   }
 
+  &--email {
+    &:hover > svg path,
+    &:focus > svg path,
+    &:active > svg path {
+      fill: @secondary-green;
+    }
+  }
+
   &--telephone {
     padding-bottom: 18px;
+
+    &:hover > svg path,
+    &:focus > svg path,
+    &:active > svg path {
+      fill: @secondary-green;
+    }
 
     @media (min-width: @desktop-width) {
       padding-bottom: 0;
@@ -634,11 +648,6 @@
   right: 0;
   top: -4px;
 
-  &:hover path,
-  &:focus path,
-  &:active path {
-    fill: @secondary-green;
-  }
 
   @media (min-width: @tablet-width) {
     right: 26px;
@@ -654,11 +663,6 @@
   right: 6px;
   top: 15px;
 
-  &:hover path,
-  &:focus path,
-  &:active path {
-    fill: @secondary-green;
-  }
 
   @media (min-width: @tablet-width) {
     right: 31px;

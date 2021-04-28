@@ -15,6 +15,29 @@
     padding-left: 225px;
     background-position: 6% 100%;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -51px;
+    width: 100%;
+    height: 6px;
+    background: url("../img/zigzag-line-mobile-fill.svg");
+
+    @media (min-width: @tablet-width) {
+      height: 17px;
+      background: url("../img/zigzag-line.svg");
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: -90px;
+      left: 50px;
+      width: 91%;
+      height: 23px;
+      background: url("../img/zigzag-line-desktop.svg");
+    }
+  }
 }
 
 .reviews__title {
