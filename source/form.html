@@ -69,9 +69,9 @@
   <form action="https://echo.htmlacademy.ru" method="POST" class="catalog-form">
     <h2 class="catalog-form__title wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
       свяжемся с вами, чтобы уточнить детали.</h2>
-    <fieldset class="catalog-form__radio">
-      <div class="catalog-form__wrapper">
-      <span class="catalog-form__legend catalog-form__legend--radio">ТИП</span>
+    <div class="catalog-form__radio">
+      <fieldset class="catalog-form__wrapper">
+      <legend class="catalog-form__legend catalog-form__legend--radio">ТИП</legend>
         <div class="catalog-form__content">
           <label for="accessories" class="catalog-form__label catalog-form__label--radio">
             <input id="accessories" type="radio" name="type" class="catalog-form__input catalog-form__input--radio visually-hidden" checked>
@@ -82,11 +82,11 @@
             <span class="catalog-form__radio-text">Детская игрушка</span>
           </label>
         </div>
-      </div>
-    </fieldset>
-    <fieldset class="catalog-form__checkbox">
-      <div class="catalog-form__wrapper catalog-form__wrapper--checkbox">
-        <span class="catalog-form__legend catalog-form__legend--checkbox">ЦВЕТ</span>
+      </fieldset>
+    </div>
+    <div class="catalog-form__checkbox">
+      <fieldset class="catalog-form__wrapper catalog-form__wrapper--checkbox">
+        <legend class="catalog-form__legend catalog-form__legend--checkbox">ЦВЕТ</legend>
         <div class="catalog-form__content">
           <label for="white" class="catalog-form__label catalog-form__label--checkbox">
             <input id="white" name="color" type="checkbox" class="catalog-form__input catalog-form__input--checkbox visually-hidden" checked>
@@ -113,11 +113,11 @@
             <span class="catalog-form__checkbox-text">Оранжевый</span>
           </label>
         </div>
-      </div>
-    </fieldset>
-    <fieldset class="catalog-form__initials">
-      <div class="catalog-form__wrapper catalog-form__wrapper--initials">
-        <span class="catalog-form__legend catalog-form__legend--initials">ФИО</span>
+      </fieldset>
+    </div>
+    <div class="catalog-form__initials">
+      <fieldset class="catalog-form__wrapper catalog-form__wrapper--initials">
+        <legend class="catalog-form__legend catalog-form__legend--initials">ФИО</legend>
         <div class="catalog-form__content">
           <label for="name" class="catalog-form__label catalog-form__label--initials">Имя:
             <input id="name" name="name" type="text" class="catalog-form__input catalog-form__input--initials" placeholder="Введите ваше имя*">
@@ -129,11 +129,11 @@
             <input id="surname" name="surname" type="text" class="catalog-form__input catalog-form__input--initials" placeholder="Отчество, если желаете">
           </label>
         </div>
-      </div>
-    </fieldset>
-    <fieldset class="catalog-form__telephone">
-      <div class="catalog-form__wrapper">
-        <span class="catalog-form__legend catalog-form__legend--telephone">ТЕЛ</span>
+      </fieldset>
+    </div>
+    <div class="catalog-form__telephone">
+      <fieldset class="catalog-form__wrapper catalog-form__wrapper--telephone">
+        <legend class="catalog-form__legend catalog-form__legend--telephone">ТЕЛ</legend>
         <div class="catalog-form__content">
           <label for="telephone" class="catalog-form__label catalog-form__label--telephone">
             <input id="telephone" name="telephone" type="text" class="catalog-form__input catalog-form__input--telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
@@ -149,11 +149,11 @@
             </svg>
         </label>
         </div>
-      </div>
-    </fieldset>
-    <fieldset class="catalog-form__email">
-      <div class="catalog-form__wrapper catalog-form__wrapper--email">
-        <span class="catalog-form__legend catalog-form__legend--email">E-MAIL</span>
+      </fieldset>
+    </div>
+    <div class="catalog-form__email">
+      <fieldset class="catalog-form__wrapper catalog-form__wrapper--email">
+        <legend class="catalog-form__legend catalog-form__legend--email">E-MAIL</legend>
         <div class="catalog-form__content">
           <label for="email" class="catalog-form__label catalog-form__label--email">
             <input id="email" name="email" type="text" class="catalog-form__input catalog-form__input--email" placeholder="Ваш Email*">
@@ -164,18 +164,18 @@
             </svg>
           </label>
         </div>
-      </div>
-    </fieldset>
-    <fieldset class="catalog-form__additionally">
-      <div class="catalog-form__wrapper catalog-form__wrapper--additionally">
-        <span class="catalog-form__legend catalog-form__legend--additionally">ДОП</span>
+      </fieldset>
+    </div>
+    <div class="catalog-form__additionally">
+      <fieldset class="catalog-form__wrapper catalog-form__wrapper--additionally">
+        <legend class="catalog-form__legend catalog-form__legend--additionally">ДОП</legend>
         <div class="catalog-form__content">
           <label for="textarea" class="catalog-form__label catalog-form__label--additionally">
             <input id="textarea" name="textarea" type="text" class="catalog-form__input catalog-form__input--additionally" placeholder="Опишите все ваши&nbsp;&nbsp;пожелания к заказу">
           </label>
         </div>
-      </div>
-    </fieldset>
+      </fieldset>
+    </div>
     <div class="catalog-form__order-by catalog-form__wrapper">
       <p class="catalog-form__text">*Поля обязательны для заполнения</p>
       <button class="button button--catalog-form">Отправить Заказ</button>
