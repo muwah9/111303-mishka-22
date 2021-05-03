@@ -21,8 +21,10 @@
   }
 
   &--contacts {
-    padding: 14px 49px;
-    margin-top: 36px;
+    @media (min-width: @mobile-width) {
+      padding: 14px 49px;
+      margin-top: 36px;
+    }
 
     &:hover,
     &:focus {
@@ -35,8 +37,10 @@
     }
 
     @media (min-width: @tablet-width) {
-      margin-left: 217px;
+      padding: 14px 35px;
+      align-self: center;
       margin-top: 50px;
+      margin-bottom: 31px;
     }
 
     @media (min-width: @desktop-width) {
@@ -75,10 +79,11 @@
     background: @light-green;
     border: none;
     padding: 19px 82px;
+    margin-top: 2px;
     margin-bottom: 46px;
 
     @media (min-width: @tablet-width) {
-      padding: 14px 128px;
+      padding: 19px 128px;
     }
   }
 
@@ -96,7 +101,7 @@
     }
 
     @media (min-width: @tablet-width) {
-      padding: 14px 35px;
+      padding: 14px 25px;
     }
   }
 
@@ -117,6 +122,7 @@
   }
 
   &--video {
+    padding: 14px 20px;
     margin: 0 auto;
     margin-bottom: 32px;
 

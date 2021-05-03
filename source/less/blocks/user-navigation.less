@@ -54,8 +54,8 @@
 
 
   @media (min-width: @tablet-width) {
-    top: -9px;
-    left: -45px;
+    top: -7px;
+    left: -47px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,8 +70,8 @@
 
 
   @media (min-width: @tablet-width) {
-    top: 23px;
-    left: -46px;
+    top: 28px;
+    left: -47px;
   }
 }
 
@@ -88,28 +88,31 @@
     &:hover > svg path,
     &:focus > svg path {
       color: @black-text-hover;
-      fill: @secondary-green;
+      fill: @light-green;
+      opacity: 1;
     }
 
     &:active,
     &:active > svg path {
-      fill: fade(@secondary-green, 30%);
+      fill: fade(@light-green, 30%);
       color: @black-text-down;
     }
 
     @media (min-width: @tablet-width) {
-      padding: 22px 0 21px 0;
+      padding: 27px 0 21px 0;
     }
   }
 
   &--search {
     &:hover > svg path,
     &:focus > svg path {
-      fill: @secondary-green;
+      fill: @light-green;
+      opacity: 1;
     }
 
     &:active > svg path {
-      fill: fade(@secondary-green, 30%);
+      fill: fade(@light-green, 30%);
+      opacity: 30%;
     }
 
     @media (min-width: @tablet-width) {

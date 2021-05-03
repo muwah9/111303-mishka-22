@@ -6,28 +6,4 @@
     padding: 0;
     min-height: 553px;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 20px;
-    width: 100%;
-    height: 6px;
-    background: url("../img/zigzag-line-mobile-fill.svg");
-
-    @media (min-width: @tablet-width) {
-      bottom: 27px;
-      height: 17px;
-      background: url("../img/zigzag-line.svg");
-    }
-
-    @media (min-width: @desktop-width) {
-      bottom: 0;
-      left: 50px;
-      width: 92%;
-      height: 23px;
-      background: url("../img/zigzag-line-desktop.svg");
-    }
-  }
 }

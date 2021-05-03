@@ -1,5 +1,13 @@
 .catalog-form {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-form__wrapper {
@@ -14,34 +22,24 @@
   padding-right: 30px;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    align-items: start;
-    justify-items: start;
-    column-gap: 93px;
     padding-top: 36px;
-    padding-bottom: 6px;
     padding-left: 50px;
     padding-right: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    column-gap: 70px;
+    padding-top: 0;
     padding-left: 110px;
     padding-right: 110px;
   }
 
   &--checkbox {
-    padding-top: 20px;
-
     @media (min-width: @tablet-width) {
-      padding-top: 67px;
-      padding-bottom: 10px;
+      padding-top: 65px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 68px;
-      padding-bottom: 7px;
+      padding-top: 31px;
     }
   }
 
@@ -49,32 +47,41 @@
     padding-bottom: 9px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 69px;
+      padding-top: 67px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 29px;
+    }
+  }
+
+  &--telephone {
+    padding-top: 0;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 37px;
     }
   }
 
   &--email {
-    padding-top: 15px;
-
     @media (min-width: @tablet-width) {
-      padding-bottom: 30px;
       padding-top: 15px;
+      padding-bottom: 27px;
     }
 
     @media (min-width: @desktop-width) {
-      column-gap: 38px;
+      padding-top: 0;
+      padding-bottom: 27px;
     }
   }
 
   &--additionally {
-    padding-top: 17px;
-
     @media (min-width: @tablet-width) {
       padding-top: 51px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 53px;
+      padding-top: 15px;
     }
   }
 }
@@ -87,11 +94,18 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6px;
+    padding-left: 150px;
+    width: inherit;
   }
 
   @media (min-width: @desktop-width) {
+    width: inherit;
+    padding-left: 115px;
+    padding-top: 36px;
+    justify-items: start;
+    column-gap: 0;
     grid-template-columns: repeat(3, 262px);
   }
 }
@@ -106,11 +120,13 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin-top: 11px;
+    margin-top: 13px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 9px;
+    margin-top: 42px;
     padding-left: 225px;
     padding-right: 225px;
   }
@@ -118,7 +134,7 @@
 
 .catalog-form__title {
   margin-top: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -126,42 +142,45 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 53px;
-    margin-top: 67px;
+    margin-top: 68px;
     margin-bottom: 44px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 119px;
+    margin-top: 115px;
     margin-bottom: 44px;
     padding-left: 225px;
     padding-right: 225px;
   }
 }
 
-.catalog-form fieldset {
-  padding: 0;
-  border: none;
-  margin: 0;
-}
-
 .catalog-form__text {
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: @basic-text;
   margin-bottom: 30px;
-  margin-top: 17px;
+  margin-top: 9px;
 
   @media (min-width: @tablet-width) {
+    width: inherit;
+    align-items: center;
     margin: 0;
     font-size: 17px;
     line-height: 30px;
   }
 }
 
+.catalog-form fieldset {
+  position: relative;
+  border: none;
+}
+
 .catalog-form__legend {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -174,20 +193,73 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    width: inherit;
+    position: absolute;
+    top: 39px;
+    left: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 109px;
+  }
+
+  &--checkbox {
+    @media (min-width: @tablet-width) {
+      top: 65px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 66px;
+      left: 110px;
+    }
   }
 
   &--telephone {
+    padding-top: 4px;
     padding-bottom: 0;
 
     @media (min-width: @tablet-width) {
-      margin-top: 31px;
+      padding-top: 0;
+      top: 66px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 109px;
+    }
+  }
+
+  &--initials {
+    @media (min-width: @tablet-width) {
+      top: 68px;
+      left: 47px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 107px;
+    }
+  }
+
+  &--email {
+    padding-top: 7px;
+    padding-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+      top: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 32px;
+      left: 109px;
     }
   }
 
   &--additionally {
+    padding-top: 4px;
+    padding-bottom: 16px;
+
     @media (min-width: @tablet-width) {
-      margin-top: 20px;
+      top: 65px;
     }
   }
 }
@@ -207,10 +279,9 @@
 /* catalog input styles */
 
 .catalog-form__input {
-  position: relative;
   margin: 0;
-  padding-top: 13px;
-  padding-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 10px;
   font-family: @font-family-base;
   font-weight: 400;
   font-size: 19px;
@@ -233,28 +304,33 @@
     font-size: 17px;
     line-height: 18px;
     color: fade(@black, 30%);
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 
   &--radio + .catalog-form__radio-text::before {
     content: "";
     position: absolute;
-    top: 4px;
-    left: -2px;
-    width: 38px;
-    height: 38px;
+    top: -3px;
+    left: 0;
+    width: 37px;
+    height: 35px;
     border: 2px solid @basic-text;
     border-radius: 50%;
 
     @media (min-width: @tablet-width) {
       top: -14px;
+      left: 21px;
       width: 48px;
       height: 46px;
-      left: 11px;
     }
 
     @media (min-width: @desktop-width) {
-      top: -18px;
-      left: 5px;
+      top: -16px;
+      left: 0;
     }
   }
 
@@ -273,36 +349,36 @@
   &--radio:checked + .catalog-form__radio-text::after {
     content: "";
     position: absolute;
-    top: 17px;
-    left: 11px;
-    width: 18px;
-    height: 18px;
+    top: 10px;
+    left: 12px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
     background: @secondary-green;
 
     @media (min-width: @tablet-width) {
       top: 1px;
-      left: 28px;
+      left: 39px;
     }
 
     @media (min-width: @desktop-width) {
-      top: -1px;
-      left: 22px;
+      top: 0;
+      left: 17px;
     }
   }
 
   &--checkbox + .catalog-form__checkbox-text::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -6px;
     left: -1px;
     width: 34px;
     height: 34px;
     border: 2px solid @basic-text;
 
     @media (min-width: @tablet-width) {
-      top: -13px;
-      left: 26px;
+      top: -17px;
+      left: 16px;
       height: 48px;
       width: 48px;
     }
@@ -334,7 +410,7 @@
       background: @mix-white-grey;
       padding: 0;
       padding-left: 18px;
-      padding-bottom: 14px;
+      padding-bottom: 11px;
     }
   }
 
@@ -351,41 +427,54 @@
     }
 
     @media (min-width: @tablet-width) {
-      min-width: 478px;
+      width: 92%;
+      padding-top: 11px;
       padding-left: 17px;
+      padding-bottom: 100px;
+      min-width: 478px;
     }
 
     @media (min-width: @desktop-width) {
       width: 100%;
+      padding-bottom: 100px;
+      padding-top: 9px;
     }
   }
 
 
   &--telephone {
+    padding-bottom: 15px;
+
     @media (min-width: @tablet-width) {
       min-width: 484px;
       background: @mix-white-grey;
       padding: 0;
       padding-top: 24px;
-      padding-bottom: 16px;
+      padding-bottom: 12px;
       padding-left: 17px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 0;
+      padding-bottom: 13px;
+      margin-top: -12px;
     }
   }
 
   &--initials {
     @media (min-width: @tablet-width) {
-      min-width: 90%;
+      min-width: 89%;
       padding: 0;
-      margin-top: -5px;
-      margin-bottom: 22px;
+      margin-top: -3px;
+      margin-bottom: 17px;
       padding-left: 17px;
       margin-left: 25px;
-      padding-bottom: 11px;
+      padding-bottom: 12px;
     }
 
     @media (min-width: @desktop-width) {
       min-width: 93%;
-      margin-top: -18px;
+      margin-top: -17px;
       padding-top: 11px;
       padding-bottom: 14px;
     }
@@ -428,41 +517,42 @@
     position: relative;
     height: 38px;
     width: max-content;
-    padding-left: 63px;
-    padding-top: 9px;
-    padding-bottom: 14px;
+    padding-left: 61px;
+    padding-top: 5px;
+    padding-bottom: 18px;
     cursor: pointer;
 
     @media (min-width: @tablet-width) {
-      padding-left: 102px;
       padding-top: 0;
-      padding-bottom: 37px;
+      padding-bottom: 38px;
+      padding-left: 97px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 72px;
+      padding-left: 82px;
     }
   }
 
   &--radio {
     position: relative;
     height: 42px;
-    padding-left: 58px;
-    padding-top: 14px;
+    padding-top: 5px;
+    padding-left: 60px;
+    padding-bottom: 11px;
     cursor: pointer;
 
     @media (min-width: @tablet-width) {
       min-width: 400px;
-      padding-left: 86px;
+      padding-left: 100px;
       margin-bottom: 35px;
       padding-top: 0;
-      justify-self: center;
+      padding-bottom: 0;
       grid-column-start: 1;
       grid-column-end: 3;
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 78px;
+      padding-left: 80px;
       margin-bottom: 34px;
       justify-self: start;
       grid-column-end: 4;
@@ -476,11 +566,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     color: @black;
 
     @media (min-width: @tablet-width) {
-      padding-left: 41px;
+      width: 97%;
+      padding-left: 18px;
       grid-column-start: 1;
       grid-column-end: 3;
     }
@@ -489,6 +580,7 @@
       padding-left: 0;
       grid-column-end: 4;
       padding-right: 75px;
+      width: 89%;
     }
   }
 
@@ -499,43 +591,50 @@
       grid-column-start: 1;
       grid-column-end: 3;
       align-items: start;
-      padding-left: 29px;
+      padding-left: 17px;
+      padding-bottom: 22px;
     }
 
     @media (min-width: @desktop-width) {
       width: 89%;
       grid-column-end: 4;
-      padding-bottom: 19px;
+      padding-bottom: 23px;
       padding-left: 0;
     }
   }
 
-  &--telephone {
-    @media (min-width: @desktop-width) {
-      margin-left: 10px;
+  &--email {
+    &:hover > svg path,
+    &:focus > svg path,
+    &:active > svg path {
+      fill: @secondary-green;
     }
   }
 
-  &--email {
-    @media (min-width: @tablet-width) {
-      padding-left: 15px;
+  &--telephone {
+    padding-bottom: 18px;
+
+    &:hover > svg path,
+    &:focus > svg path,
+    &:active > svg path {
+      fill: @secondary-green;
     }
 
     @media (min-width: @desktop-width) {
-      width: 89%;
+      padding-bottom: 0;
     }
   }
 
   &--additionally {
     @media (min-width: @tablet-width) {
-      justify-self: center;
-      padding-left: 33px;
+      width: 100%;
+      padding-left: 13px;
       grid-column-start: 1;
       grid-column-end: 3;
     }
 
     @media (min-width: @desktop-width) {
-      min-width: 86%;
+      width: 86%;
       justify-self: start;
       padding-left: 0;
       grid-column-end: 4;
@@ -546,44 +645,32 @@
 
 .catalog-form__email-image {
   position: absolute;
-  right: 3px;
-  top: 0;
+  right: 0;
+  top: -4px;
 
-  &:hover path,
-  &:focus path,
-  &:active path {
-    fill: @secondary-green;
-  }
 
   @media (min-width: @tablet-width) {
-    right: 19px;
-    top: -2px;
+    right: 26px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 76px;
-    top: 0;
+    right: 80px;
   }
 }
 
 .catalog-form__telephone-image {
   position: absolute;
-  right: 8px;
+  right: 6px;
   top: 15px;
 
-  &:hover path,
-  &:focus path,
-  &:active path {
-    fill: @secondary-green;
-  }
 
   @media (min-width: @tablet-width) {
-    right: 22px;
-    top: 28px;
+    right: 31px;
+    top: 26px;
   }
 
   @media (min-width: @desktop-width) {
     right: 84px;
-    top: 28px;
+    top: -12px;
   }
 }

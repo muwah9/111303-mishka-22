@@ -2,14 +2,14 @@
   margin-top: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 76px;
+    margin-top: 74px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 34px;
+    margin-top: 41px;
     display: flex;
     flex-direction: column;
-    padding-left: 225px;
+    padding-left: 227px;
   }
 }
 
@@ -38,12 +38,12 @@
   @media (min-width: @tablet-width) {
     justify-items: start;
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 34px;
-    column-gap: 36px;
   }
 
   @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 300px);
     column-gap: 50px;
   }
 }
@@ -64,7 +64,7 @@
     font-size: 20px;
     line-height: 22px;
     padding-top: 41px;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
   }
 
   &::before {

@@ -9,7 +9,7 @@
 </head>
 <body class="page__body">
 <header class="page-header">
-  <nav class="main-navigation">
+  <nav class="main-navigation main-navigation--closed main-navigation--no-js">
     <a href="index.html" class="main-navigation__logo">
       <picture>
         <source media="(min-width: 1150px)" srcset="/img/mishka-logo.svg">
@@ -20,7 +20,7 @@
     <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
     <ul class="main-navigation__site-list site-navigation">
       <li class="site-navigation__item">
-        <a href="#" class="site-navigation__link">Каталог товаров</a>
+        <a class="site-navigation__link">Каталог товаров</a>
       </li>
       <li class="site-navigation__item">
         <a href="form.html" class="site-navigation__link">Вязание на заказ</a>
@@ -69,14 +69,16 @@
     <div class="catalog-card wrapper">
       <ul class="catalog-card__list">
         <li class="catalog-card__item">
-          <picture class="catalog-card__picture">
-            <source media="(min-width: 1150px)" srcset="/img/item-bunny.jpg" sizes="316px 462px">
-            <source media="(min-width: 768px)" srcset="/img/item-bunny-tablet.jpg">
-            <img class="catalog-card__image" src="./img/item-bunny-mobile.jpg" alt="Зайчик-попрыгайчик">
-          </picture>
+          <a href="#" aria-label="карточка товара">
+            <picture class="catalog-card__picture">
+              <source media="(min-width: 1150px)" srcset="/img/item-bunny.jpg">
+              <source media="(min-width: 768px)" srcset="/img/item-bunny-tablet.jpg">
+              <img class="catalog-card__image" src="./img/item-bunny-mobile.jpg" alt="Зайчик-попрыгайчик">
+            </picture>
+          </a>
           <div class="catalog-card__info">
             <div class="catalog-card__description">
-              <h3 class="catalog-card__title">Зайчик-попрыгайчик</h3>
+              <a  href="#" class="catalog-card__title">Зайчик-попрыгайчик</a>
               <p class="catalog-card__text">Рост 30 см, вес 200 г</p>
             </div>
             <div class="catalog-card__order">
@@ -92,14 +94,16 @@
           </div>
         </li>
         <li class="catalog-card__item">
-          <picture class="catalog-card__picture">
-            <source media="(min-width: 1150px)" srcset="/img/item-basket-towel.jpg" sizes="316px 462px">
-            <source media="(min-width: 768px)" srcset="/img/item-basket-towel-tablet.jpg">
-            <img class="catalog-card__image" src="./img/item-basket-towel-mobile.jpg" alt="Корзинка для белья">
-          </picture>
+          <a href="#" aria-label="карточка товара">
+            <picture class="catalog-card__picture">
+              <source media="(min-width: 1150px)" srcset="/img/item-basket-towel.jpg">
+              <source media="(min-width: 768px)" srcset="/img/item-basket-towel-tablet.jpg">
+              <img class="catalog-card__image" src="./img/item-basket-towel-mobile.jpg" alt="Корзинка для белья">
+            </picture>
+          </a>
           <div class="catalog-card__info">
             <div class="catalog-card__description">
-              <h3 class="catalog-card__title">Корзинка для белья</h3>
+              <a href="#" class="catalog-card__title">Корзинка для белья</a>
               <p class="catalog-card__text">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="catalog-card__order">
@@ -115,14 +119,16 @@
           </div>
         </li>
         <li class="catalog-card__item">
-          <picture class="catalog-card__picture">
-            <source media="(min-width: 1150px)" srcset="./img/item-basket-toys.jpg">
-            <source media="(min-width: 768px)" srcset="./img/item-basket-toys-tablet.jpg">
-            <img class="catalog-card__image" src="./img/item-basket-toys-mobile.jpg"alt="Корзинка для игрушек">
-          </picture>
+          <a href="#" aria-label="карточка товара">
+            <picture class="catalog-card__picture">
+              <source media="(min-width: 1150px)" srcset="/img/item-basket-toys.jpg">
+              <source media="(min-width: 768px)" srcset="/img/item-basket-toys-tablet.jpg">
+              <img class="catalog-card__image" src="./img/item-basket-toys-mobile.jpg" alt="Корзинка для игрушек">
+            </picture>
+          </a>
           <div class="catalog-card__info">
             <div class="catalog-card__description">
-              <h3 class="catalog-card__title">Большая корзинка <br>для игрушек</h3>
+              <a href="#" class="catalog-card__title">Большая корзинка <br>для игрушек</a>
               <p class="catalog-card__text">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="catalog-card__order">
@@ -169,7 +175,7 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="#" class="page-footer__logo" aria-label="Логотип Mishka">
+    <a href="index.html" class="page-footer__logo" aria-label="Логотип Mishka">
       <svg width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M19.2694 21.3813C19.1691 18.6962 18.7681 16.1105 18.7681 13.4255C18.7681 11.2376 19.1691 9.04976 18.3671 6.96135C18.3671 6.76246 18.4673 6.46411 18.4673 6.26522C18.6678 5.27074 15.1589 5.76798 14.6576 6.76246C14.3569 7.0608 14.1564 7.35914 14.2566 7.75694C14.2566 7.85638 14.3569 7.95583 14.3569 8.05528C13.6551 11.2376 12.7528 14.3205 11.7503 17.4034C11.3492 18.5967 10.848 19.6907 10.4469 20.884C9.84542 19.7901 9.24389 18.6962 8.84287 17.5028C7.4393 14.1216 6.23625 10.6409 4.53192 7.35914C4.73243 5.86743 1.32377 5.96688 0.621988 7.35914C-0.180049 9.04976 -0.0797945 10.7404 0.220969 12.5304C0.521733 14.5194 0.621988 16.5083 0.621988 18.5967C0.621988 22.5746 1.02301 26.4531 1.02301 30.431C0.621988 30.8288 0.521733 31.326 0.922752 31.8233C1.12326 32.0222 1.32377 32.2211 1.52428 32.3205C2.52683 33.0167 5.13345 32.42 5.13345 31.0277C5.13345 26.9503 4.83268 22.873 4.73243 18.6962C4.73243 18.2984 4.73243 17.9006 4.73243 17.5028C4.83268 17.6023 4.83268 17.8012 4.93294 17.9006C5.53447 19.4918 6.23625 21.0829 7.13854 22.5746C8.04083 24.0664 8.44185 25.6575 8.94312 27.2487C8.74261 27.4476 8.64236 27.7459 8.74262 27.9448C8.74262 28.1437 8.84287 28.2432 9.04338 28.3426C9.64491 28.8399 10.848 28.641 11.5497 28.3426C11.8505 28.2432 12.1513 28.0443 12.3518 27.9448C12.6525 27.7459 13.2541 27.2487 13.0536 26.7514C13.0536 26.652 12.9533 26.5526 12.9533 26.4531C13.4546 25.1603 13.6551 23.8675 13.9559 22.5746C14.2566 21.1824 14.7579 19.7901 15.2592 18.4973C15.3594 19.094 15.3594 19.6907 15.4597 20.3868C15.6602 22.9724 15.4597 25.4586 15.4597 27.9448C15.4597 28.7404 15.5599 29.536 15.6602 30.431C15.7604 30.7294 16.0612 32.2211 15.9609 32.3205C15.1589 32.8178 15.3594 33.4144 16.1615 33.6133C17.0638 33.8122 18.2668 33.5139 18.9686 32.9172C20.1716 31.8233 19.5701 30.1327 19.3696 28.7404C18.8683 26.3537 19.3696 23.768 19.2694 21.3813Z"
@@ -255,5 +261,6 @@
     </form>
   </div>
 </footer>
+<script src="js/mobile-menu.js"></script>
 </body>
 </html>
