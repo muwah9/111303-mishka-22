@@ -1,4 +1,6 @@
 .user-navigation {
+  position: relative;
+
   @media (min-width: @mobile-width) {
     padding: 0;
   }
@@ -17,7 +19,16 @@
     padding-left: 4px;
     order: 2;
     flex-basis: 37%;
-    border-bottom: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 476px;
+      width: calc(50vw - 575px);
+      height: 100%;
+      background-color: #ffffff;
+    }
   }
 }
 
