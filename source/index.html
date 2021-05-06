@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/favicon/favicon32.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body class="page__body">
@@ -99,9 +103,9 @@
           </div>
         </dl>
         <picture>
-          <source media="(min-width: 1150px)" srcset="./img/item-basket.jpg">
-          <source media="(min-width: 768px)" srcset="./img/item-basket-tablet.jpg">
-          <img src="./img/item-basket-mobile.jpg" class="product-card__image" alt="Вязаная корзинка Тиффани">
+          <source media="(min-width: 1150px)" srcset="./img/item-basket.jpg, ./img/item-basket@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/item-basket-tablet.jpg, ./img/item-basket-tablet@2x.jpg 2x">
+          <img src="./img/item-basket-mobile.jpg, ./img/item-basket-mobile@2x.jpg 2x" class="product-card__image" alt="Вязаная корзинка Тиффани">
         </picture>
         <p class="product-card__price">Цена: 990 руб.</p>
         <a class="button button--product" href="#" aria-label="кнопка заказать">Заказать</a>
@@ -144,7 +148,7 @@
         <li class="reviews__item slider__item">
           <blockquote class="reviews__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как<br>
-            у популярных инстамамочек.<br>&nbsp; В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br>
+            у популярных инстамамочек.<br>&nbsp;В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br>
             и мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </blockquote>
           <p class="reviews__author">
@@ -194,9 +198,9 @@
       </dl>
       <div class="interactive-map">
         <picture>
-          <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg">
-          <img class="interactive-map__map" src="./img/map-mobile.jpg" alt="карта с адресом">
+          <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg, ./img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg, ./img/map-tablet@2x.jpg 2x">
+          <img class="interactive-map__map" src="./img/map-mobile.jpg, ./img/map-mobile@2x.jpg 2x" alt="карта с адресом">
         </picture>
         <img class="interactive-map__marker" src="./img/marker-on-map.png" alt="маркер на карте" width="67" height="100">
       </div>
@@ -277,14 +281,17 @@
       <fieldset class="form__fieldset">
         <legend class="form__legend">Выберите размер:</legend>
         <div class="form__input-wrapper">
-          <label for="size-s" class="form__label form__label--current" for="size-s">S
+          <label for="size-s" class="form__label form__label--current" for="size-s">
             <input class="form__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+            <span class="form__text">S</span>
           </label>
-          <label for="size-m" class="form__label" for="size-m">M
+          <label for="size-m" class="form__label" for="size-m">
             <input class="form__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+            <span class="form__text">M</span>
           </label>
-          <label for="size-l" class="form__label" for="size-l">L
+          <label for="size-l" class="form__label" for="size-l">
             <input class="form__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+            <span class="form__text">L</span>
           </label>
         </div>
       </fieldset>
@@ -292,6 +299,6 @@
     </form>
   </div>
 </footer>
-<script src="js/mobile-menu.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

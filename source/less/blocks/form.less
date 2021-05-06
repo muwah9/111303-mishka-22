@@ -54,29 +54,9 @@
 }
 
 .form__label {
-  border: 2px solid fade(@basic-text, 10%);
-  box-sizing: border-box;
-  padding: 16px 10px 15px;
   width: 82px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-align: center;
+  border: none;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    border: 2px solid fade(@basic-text, 30%);
-  }
-
-  &:active {
-    border: 2px solid @light-green;
-  }
-
-  &--current {
-    border: 2px solid @light-green;
-  }
 
   @media (min-width: @tablet-width) {
     width: 112px;
@@ -88,4 +68,26 @@
   margin: 0;
   border: none;
   text-align: center;
+}
+
+
+.form__text {
+  display: block;
+  border: 2px solid fade(@basic-text, 10%);
+  box-sizing: border-box;
+  padding: 16px 10px 15px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__radio:checked + .form__text {
+  border: 2px solid @light-green;
+}
+
+.form__radio:not(:checked) + .form__text:hover,
+.form__radio:not(:checked) + .form__text:focus {
+  border: 2px solid fade(@basic-text, 30%);
 }
