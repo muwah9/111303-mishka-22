@@ -18,6 +18,17 @@
     order: 0;
     background: white;
     flex-basis: 39%;
+    border-bottom: 1px solid #ececec;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 490px;
+      width: calc(50vw - 575px);
+      height: 100%;
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -40,7 +51,7 @@
   @media (min-width: @desktop-width) {
     font-size: 17px;
 
-    &:nth-child(1) {
+    &:nth-child(odd) {
       border-right: 1px solid @border-grey;
     }
 
