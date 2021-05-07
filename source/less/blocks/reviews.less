@@ -11,10 +11,11 @@
     padding-right: 50px;
     position: relative;
     background: url("../img/background-reviews.png") no-repeat top left;
-    background-size: 350px 457px;
+    background-size: image-size("../img/background-reviews.png");
 
     @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
-      background: url("../img/background-reviews@2x.png");
+      background: url("../img/background-reviews@2x.png") no-repeat top left;
+      background-size: image-size("../img/background-reviews.png");
     }
   }
 
