@@ -58,7 +58,7 @@
   position: absolute;
   top: 31px;
   left: -44px;
-
+  fill-opacity: 20%;
 
   @media (min-width: @tablet-width) {
     top: -7px;
@@ -74,6 +74,7 @@
   position: absolute;
   top: 30px;
   left: -31px;
+  fill-opacity: 20%;
 
 
   @media (min-width: @tablet-width) {
@@ -92,17 +93,17 @@
 
     &:hover,
     &:focus,
-    &:hover > svg path,
-    &:focus > svg path {
+    &:hover > .user-navigation__basket,
+    &:focus > .user-navigation__basket {
       color: @black-text-hover;
       fill: @light-green;
-      opacity: 1;
+      fill-opacity: 100%;
     }
 
     &:active,
-    &:active > svg path {
-      fill: fade(@light-green, 30%);
+    &:active > .user-navigation__basket {
       color: @black-text-down;
+      fill-opacity: 30%;
     }
 
     @media (min-width: @tablet-width) {
@@ -111,15 +112,15 @@
   }
 
   &--search {
-    &:hover > svg path,
-    &:focus > svg path {
+    &:hover > .user-navigation__search,
+    &:focus > .user-navigation__search {
       fill: @light-green;
-      opacity: 1;
+      fill-opacity: 100%;
     }
 
-    &:active > svg path {
+    &:active > .user-navigation__search {
       fill: fade(@light-green, 30%);
-      opacity: 30%;
+      fill-opacity: 30%;
     }
 
     @media (min-width: @tablet-width) {
