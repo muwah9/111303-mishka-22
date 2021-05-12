@@ -31,13 +31,13 @@
   }
 }
 
-.socials__link {
-  &:hover path,
-  &:focus path {
+.socials__link > svg {
+  &:hover,
+  &:focus {
     fill: @logo-fill-green;
   }
 
-  &:active path {
+  &:active {
     fill: fade(@logo-fill-green, 30%);
   }
 }
