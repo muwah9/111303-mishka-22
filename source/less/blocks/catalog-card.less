@@ -162,14 +162,16 @@
   }
 }
 
-.catalog-card__price-link {
-  &:hover > svg path,
-  &:focus > svg path {
+.catalog-card__price-link svg {
+  fill-opacity: 20%;
+
+  &:hover,
+  &:focus {
     fill: @light-green;
-    opacity: 1;
+    fill-opacity: 100%;
   }
 
-  &:active > svg path {
+  &:active {
     fill: fade(@light-green, 30%);
   }
 }
