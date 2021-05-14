@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Каталог товаров магазина Mishka</title>
-  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/favicon/favicon32.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="/css/style.min.css"/>
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -67,6 +74,9 @@
         <li class="catalog-card__item">
           <a href="#" aria-label="карточка товара">
             <picture class="catalog-card__picture">
+              <source media="(min-width: 1150px)" type="image/webp" srcset="/img/item-bunny.webp, /img/item-bunny@2x.webp">
+              <source media="(min-width: 768px)" type="image/webp" srcset="/img/item-bunny-tablet.webp, /img/item-bunny-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="/img/item-bunny.webp, /img/item-bunny@2x.webp 2x">
               <source media="(min-width: 1150px)" type="image/webp" srcset="/img/item-bunny.webp, /img/item-bunny@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="/img/item-bunny-tablet.webp, /img/item-bunny-tablet@2x.webp 2x">
               <source type="image/webp" srcset="/img/item-bunny-mobile.webp, /img/item-bunny-mobile@2x.webp 2x">
@@ -93,6 +103,9 @@
         <li class="catalog-card__item">
           <a href="#" aria-label="карточка товара">
             <picture class="catalog-card__picture">
+              <source media="(min-width: 1150px)" type="image/webp" srcset="/img/item-basket-towel.webp, /img/item-basket-towel@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="/img/item-basket-towel-tablet.webp, /img/item-basket-towel-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="/img/item-basket-towel-mobile.webp, /img/item-basket-towel-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="/img/item-basket-towel.jpg, /img/item-basket-towel@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="/img/item-basket-towel-tablet.jpg, /img/item-basket-towel-tablet@2x.jpg 2x">
               <img class="catalog-card__image" src="/img/item-basket-towel-mobile.jpg" srcset="/img/item-basket-towel-mobile@2x.jpg 2x" alt="Корзинка для белья">
@@ -116,6 +129,9 @@
         <li class="catalog-card__item">
           <a href="#" aria-label="карточка товара">
             <picture class="catalog-card__picture">
+              <source media="(min-width: 1150px)" type="image/webp" srcset="/img/item-basket-toys.webp, /img/item-basket-toys@2x.webp">
+              <source media="(min-width: 768px)" type="image/webp" srcset="/img/item-basket-toys-tablet.webp, /img/item-basket-toys@2x.webp 2x">
+              <source type="image/webp" srcset="/img/item-basket-toys-mobile.webp, /img/item-basket-toys-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="/img/item-basket-toys.jpg, /img/item-basket-toys@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="/img/item-basket-toys-tablet.jpg, /img/item-basket-toys-tablet@2x.jpg 2x">
               <img class="catalog-card__image" src="/img/item-basket-toys-mobile.jpg" srcset="/img/item-basket-toys-mobile@2x.jpg 2x" alt="Корзинка для игрушек">
@@ -143,6 +159,9 @@
     <div class="wrapper">
       <div class="promo-video">
         <picture class="promo-video__picture">
+          <source media="(min-width: 1150px)" type="image/webp" srcset="/img/video-background-desktop.webp, /img/video-background-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="/img/video-background.webp, /img/video-background@2x.webp 2x">
+          <source type="image/webp" srcset="/img/video-background-mobile.webp, /img/video-background-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="/img/video-background-desktop.png, /img/video-background-desktope@2x.png 2x">
           <source media="(min-width: 768px)" srcset="/img/video-background.png, /img/video-background@2x.png 2x">
           <img class="promo-video__img" src="/img/video-background-mobile.png" srcset="/img/video-background-mobile@2x.png 2x" alt="Видео">
@@ -223,6 +242,6 @@
     </form>
   </div>
 </footer>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
